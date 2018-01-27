@@ -9843,6 +9843,10 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 426630, guid: 9e613db9d284cc14a9b0209f88d3b941, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.79534715
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9e613db9d284cc14a9b0209f88d3b941, type: 2}
   m_IsPrefabParent: 0
@@ -14078,6 +14082,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crosshairImage: {fileID: 2800000, guid: 31a5d605fefc14f7aaf89a2fda34ece7, type: 3}
+--- !u!114 &1403291471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1403291463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: d982e879ff67b4d3fb6522d08c3cd5af, type: 2}
 --- !u!1001 &1415406321
 Prefab:
   m_ObjectHideFlags: 0
@@ -16084,6 +16100,10 @@ Prefab:
     - target: {fileID: 443704, guid: b3ba71d7c63addc49b57e4c8e35af826, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 443704, guid: b3ba71d7c63addc49b57e4c8e35af826, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.86136097
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3ba71d7c63addc49b57e4c8e35af826, type: 2}
