@@ -17,25 +17,8 @@ public class Gun : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		GameObject raycastedObj = RaycastObject();
-		if (raycastedObj == null)
-			return;
-		
-		EnergyObject raycastedEnergyObj = raycastedObj.GetComponent<EnergyObject>();
-		if (raycastedEnergyObj == null)
-			return;
-
-		if (!isLoaded && raycastedEnergyObj.isVisible)
-		{
-			Absorb();
-			raycastedEnergyObj.SwitchState();
-		}
-
-		else if (isLoaded && !raycastedEnergyObj.isVisible)
-		{
-			Shoot();
-			raycastedEnergyObj.SwitchState();
-		}
+		GunHandler();
+		//DrawLine(transform.position, transform.position + transform.forward * 10, Color.blue);
 	}
 
 	GameObject RaycastObject()
@@ -67,4 +50,43 @@ public class Gun : MonoBehaviour {
 	{
 		isLoaded = false;
 	}
+
+	void GunHandler()
+	{
+		GameObject raycastedObj = RaycastObject();
+		if (raycastedObj == null)
+			return;
+
+		EnergyObject raycastedEnergyObj = raycastedObj.GetComponent<EnergyObject>();
+		if (raycastedEnergyObj == null)
+			return;
+
+		if (!isLoaded && raycastedEnergyObj.isVisible)
+		{
+			Absorb();
+			raycastedEnergyObj.SwitchState();
+		}
+
+		else if (isLoaded && !raycastedEnergyObj.isVisible)
+		{
+			Shoot();
+			raycastedEnergyObj.SwitchState();
+		}
+	}
+
+	/*void DrawLine(Vector3 start, Vector3 end, Color color, float duration = 0.2f)
+	{
+		GameObject myLine = new GameObject();
+		myLine.transform.SetParent(transform);
+		myLine.transform.position = start;
+		myLine.AddComponent<LineRenderer>();
+		LineRenderer lr = myLine.GetComponent<LineRenderer>();
+		lr.alignment = LineAlignment.Local;
+		lr.material = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
+		lr.SetColors(color, color);
+		lr.SetWidth(0.1f, 0.5f);
+		lr.SetPosition(0, start);
+		lr.SetPosition(1, end);
+		GameObject.Destroy(myLine, duration);
+	}*/
 }
