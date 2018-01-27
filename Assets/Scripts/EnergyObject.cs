@@ -16,9 +16,12 @@ public class EnergyObject : MonoBehaviour {
 		
 	}
 
-	public void SwitchState()
+	public void SwitchState(GameObject obj)
 	{
 		isVisible = !isVisible;
 		GetComponent<Renderer>().enabled = isVisible;
+
+		obj.GetComponent<Collider>().isTrigger = !isVisible;
+
 	}
 }
