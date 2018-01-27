@@ -5,11 +5,13 @@ using UnityEngine;
 public class EnergyObject : MonoBehaviour {
 	public bool isVisible = true; 
 	Animator anim;
+    [SerializeField] AudioSource audioSource;
 
 
 	void Awake()
 	{
 		anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 	}
 
 	// Use this for initialization
@@ -20,7 +22,8 @@ public class EnergyObject : MonoBehaviour {
 			//GetComponent<Renderer>().enabled = false;
 			anim.SetBool("isMaterialized", false);
 			GetComponent<Collider>().isTrigger = true;
-		}
+            audioSource.enabled = false;
+        }
 	}
 	
 	// Update is called once per frame
@@ -52,8 +55,9 @@ public class EnergyObject : MonoBehaviour {
 			return;
 
 		isVisible = !isVisible;
-		//GetComponent<Renderer>().enabled = isVisible;
-		anim.SetBool("isMaterialized", isVisible);
+        audioSource.enabled = isVisible;
+        //GetComponent<Renderer>().enabled = isVisible;
+        anim.SetBool("isMaterialized", isVisible);
 		gameObject.GetComponent<Collider>().isTrigger = !isVisible;
 
 	}
