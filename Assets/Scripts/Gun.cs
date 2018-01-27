@@ -25,7 +25,7 @@ public class Gun : MonoBehaviour {
 		if (raycastedEnergyObj == null)
 			return;
 
-		if (raycastedEnergyObj.isVisible)
+		if (!isLoaded && raycastedEnergyObj.isVisible)
 		{
 			Absorb();
 			raycastedEnergyObj.SwitchState();

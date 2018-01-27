@@ -386,3 +386,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crosshairImage: {fileID: 2800000, guid: 31a5d605fefc14f7aaf89a2fda34ece7, type: 3}
+--- !u!1001 &1726650363
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4832240580578198, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832240580578198, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832240580578198, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 5.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832240580578198, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832240580578198, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832240580578198, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832240580578198, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4832240580578198, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1355034634854024, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
+      propertyPath: m_Name
+      value: Energy Object (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
+  m_IsPrefabParent: 0
