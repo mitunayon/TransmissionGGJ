@@ -17,8 +17,8 @@ public class EnergyObject : MonoBehaviour {
 
 		if (!isVisible)
 		{
-			GetComponent<Renderer>().enabled = false;
-
+			//GetComponent<Renderer>().enabled = false;
+			anim.SetBool("isMaterialized", false);
 			GetComponent<Collider>().isTrigger = true;
 		}
 	}
