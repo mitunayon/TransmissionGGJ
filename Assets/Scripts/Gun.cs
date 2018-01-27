@@ -28,13 +28,13 @@ public class Gun : MonoBehaviour {
 		if (!isLoaded && raycastedEnergyObj.isVisible)
 		{
 			Absorb();
-			raycastedEnergyObj.SwitchState(raycastedObj);
+			raycastedEnergyObj.SwitchState();
 		}
 
 		else if (isLoaded && !raycastedEnergyObj.isVisible)
 		{
 			Shoot();
-			raycastedEnergyObj.SwitchState(raycastedObj);
+			raycastedEnergyObj.SwitchState();
 		}
 	}
 

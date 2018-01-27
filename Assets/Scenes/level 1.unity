@@ -756,6 +756,11 @@ Prefab:
       propertyPath: m_Name
       value: Energy Object (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
@@ -866,6 +871,11 @@ Prefab:
       propertyPath: m_Name
       value: Energy Object (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
@@ -929,6 +939,11 @@ Prefab:
     - target: {fileID: 1355034634854024, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
       propertyPath: m_Name
       value: Energy Object (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
@@ -1228,6 +1243,11 @@ Prefab:
       propertyPath: m_Name
       value: Energy Object (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
@@ -1387,6 +1407,11 @@ Prefab:
     - target: {fileID: 1355034634854024, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
       propertyPath: m_Name
       value: Energy Object (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
@@ -1556,6 +1581,11 @@ Prefab:
       propertyPath: m_Name
       value: Energy Object (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
@@ -1681,6 +1711,11 @@ Prefab:
     - target: {fileID: 1355034634854024, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
       propertyPath: m_Name
       value: Energy Object (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
@@ -1808,6 +1843,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
@@ -1868,6 +1908,11 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f22004263ce1bd048887030434d73757, type: 2}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
@@ -2091,6 +2136,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114494103913775098, guid: d572ceb2b1036864dbae4a38e6b75f98,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114596632419883330, guid: d572ceb2b1036864dbae4a38e6b75f98,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114469698195518234, guid: d572ceb2b1036864dbae4a38e6b75f98,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114995630309585702, guid: d572ceb2b1036864dbae4a38e6b75f98,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270645663762624, guid: d572ceb2b1036864dbae4a38e6b75f98,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114972323485847174, guid: d572ceb2b1036864dbae4a38e6b75f98,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d572ceb2b1036864dbae4a38e6b75f98, type: 2}
   m_IsPrefabParent: 0
@@ -2157,6 +2232,11 @@ Prefab:
     - target: {fileID: 4832240580578198, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
@@ -2410,6 +2490,11 @@ Prefab:
     - target: {fileID: 1355034634854024, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
       propertyPath: m_Name
       value: Energy Object (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
@@ -2776,6 +2861,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.x
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 23108322832501320, guid: 44c98468ac4875748afc69928295f43e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 44c98468ac4875748afc69928295f43e, type: 2}
   m_IsPrefabParent: 0
@@ -3099,6 +3189,11 @@ Prefab:
     - target: {fileID: 1355034634854024, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}
       propertyPath: m_Name
       value: Energy Object (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114637690450694474, guid: b2b42678420c042ea90e06eae6f8babe,
+        type: 2}
+      propertyPath: isVisible
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 54497707097573578, guid: b2b42678420c042ea90e06eae6f8babe, type: 2}

@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnergyObject : MonoBehaviour {
-	public bool isVisible;
+	public bool isVisible = true;
+
 
 
 	// Use this for initialization
 	void Start () {
-		isVisible = true;
+		if (!isVisible)
+		{
+			GetComponent<Renderer>().enabled = false;
+
+			GetComponent<Collider>().isTrigger = true;
+		}
+			
 	}
 	
 	// Update is called once per frame
@@ -16,12 +23,12 @@ public class EnergyObject : MonoBehaviour {
 		
 	}
 
-	public void SwitchState(GameObject obj)
+	public void SwitchState()
 	{
 		isVisible = !isVisible;
 		GetComponent<Renderer>().enabled = isVisible;
 
-		obj.GetComponent<Collider>().isTrigger = !isVisible;
+		gameObject.GetComponent<Collider>().isTrigger = !isVisible;
 
 	}
 }
