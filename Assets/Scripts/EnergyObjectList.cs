@@ -27,7 +27,8 @@ public class EnergyObjectList : MonoBehaviour {
 		for (int i = 0; i < energyGameObjects.Length; i++)
 		{
 			transform.GetChild(i).GetComponent<EnergyObject>().isVisible = isVisible;
-			transform.GetChild(i).GetComponent<Renderer>().enabled = isVisible;
+			//transform.GetChild(i).GetComponent<Renderer>().enabled = isVisible;
+			transform.GetChild(i).GetComponent<Animator>().SetBool("isMaterialized", isVisible);
 			transform.GetChild(i).GetComponent<Collider>().isTrigger = !isVisible;
 			print("Object " + i + " renderer is " + isVisible);
 			print("Object " + i + " collider is " + !isVisible);
