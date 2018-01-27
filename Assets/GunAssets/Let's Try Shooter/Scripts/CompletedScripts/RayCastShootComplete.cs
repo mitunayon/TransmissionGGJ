@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class RayCastShootComplete : MonoBehaviour {
-	public float fireRate = 0.25f;										// Number in seconds which controls how often the player can fire
+	public float fireRate = 0.10f;										// Number in seconds which controls how often the player can fire
 	public float weaponRange = 50f;										// Distance in Unity units over which the player can fire
 	public Transform gunEnd;											// Holds a reference to the gun end object, marking the muzzle location of the gun
 
