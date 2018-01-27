@@ -5,9 +5,12 @@ using UnityEngine;
 public class Gun : MonoBehaviour {
 	Camera playerCam;
 	bool isLoaded;
+    [SerializeField] AudioSource sndShoot;
+    [SerializeField] AudioSource sndAbsorb;
 
 	void Awake() {
 		playerCam = GetComponent<Camera>();
+        
 	}
 
 	// Use this for initialization
@@ -44,11 +47,13 @@ public class Gun : MonoBehaviour {
 	void Absorb()
 	{
 		isLoaded = true;
+        sndAbsorb.Play();
 	}
 
 	void Shoot()
 	{
 		isLoaded = false;
+        sndShoot.Play();
 	}
 
 	void GunHandler()
