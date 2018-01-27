@@ -3123,7 +3123,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4013675307320602, guid: 44c98468ac4875748afc69928295f43e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.04
+      value: -2.32
       objectReference: {fileID: 0}
     - target: {fileID: 4013675307320602, guid: 44c98468ac4875748afc69928295f43e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -4838,6 +4838,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed1ade26384fe644d918b6fc563bab60, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &660328959 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: bd0a17be9280439418203fe96116cee6, type: 3}
+  m_PrefabInternal: {fileID: 1598892255}
+--- !u!64 &660328960
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 660328959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: bd0a17be9280439418203fe96116cee6, type: 3}
 --- !u!1001 &665594312
 Prefab:
   m_ObjectHideFlags: 0
@@ -11762,9 +11780,7 @@ Prefab:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114417381983572358, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-    - {fileID: 114517325965122342, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1128934956
@@ -13322,7 +13338,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4013675307320602, guid: 44c98468ac4875748afc69928295f43e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.04
+      value: -2.32
       objectReference: {fileID: 0}
     - target: {fileID: 4013675307320602, guid: 44c98468ac4875748afc69928295f43e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -18010,6 +18026,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 69b3d20c177508d43a1c6f09b448d3ea, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1942721209 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: bd0a17be9280439418203fe96116cee6, type: 3}
+  m_PrefabInternal: {fileID: 855091593}
+--- !u!64 &1942721210
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942721209}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: bd0a17be9280439418203fe96116cee6, type: 3}
 --- !u!1001 &1943937473
 Prefab:
   m_ObjectHideFlags: 0
