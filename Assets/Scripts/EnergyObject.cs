@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class EnergyObject : MonoBehaviour {
 	public bool isVisible = true; 
+	Animator anim;
 
+
+	void Awake()
+	{
+		anim = GetComponent<Animator>();
+	}
 
 	// Use this for initialization
 	void Start () {
+
 		if (!isVisible)
 		{
 			GetComponent<Renderer>().enabled = false;
@@ -45,9 +52,9 @@ public class EnergyObject : MonoBehaviour {
 			return;
 
 		isVisible = !isVisible;
-		GetComponent<Renderer>().enabled = isVisible;
-
+		//GetComponent<Renderer>().enabled = isVisible;
+		anim.SetBool("isMaterialized", isVisible);
 		gameObject.GetComponent<Collider>().isTrigger = !isVisible;
-		print("regular switch state");
+
 	}
 }
