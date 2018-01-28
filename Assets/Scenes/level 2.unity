@@ -4265,6 +4265,7 @@ GameObject:
   - component: {fileID: 427521409}
   - component: {fileID: 427521411}
   - component: {fileID: 427521410}
+  - component: {fileID: 427521412}
   m_Layer: 0
   m_Name: window_big_LOD0 (3)
   m_TagString: Untagged
@@ -4331,6 +4332,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 427521408}
   m_Mesh: {fileID: 4300000, guid: c93a7b6fab490314f9f3471aa2616c70, type: 3}
+--- !u!65 &427521412
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 427521408}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.000001, y: 4, z: 1.0689317}
+  m_Center: {x: -0.0000017795678, y: 2, z: -1.0239687}
 --- !u!1001 &428144214
 Prefab:
   m_ObjectHideFlags: 0
@@ -5346,6 +5359,7 @@ GameObject:
   - component: {fileID: 556349248}
   - component: {fileID: 556349250}
   - component: {fileID: 556349249}
+  - component: {fileID: 556349251}
   m_Layer: 0
   m_Name: window_big_LOD0 (1)
   m_TagString: Untagged
@@ -5412,6 +5426,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 556349247}
   m_Mesh: {fileID: 4300000, guid: c93a7b6fab490314f9f3471aa2616c70, type: 3}
+--- !u!65 &556349251
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556349247}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 0.64558893}
+  m_Center: {x: 2.2084288e-13, y: 2, z: -1.2356386}
 --- !u!1001 &563050076
 Prefab:
   m_ObjectHideFlags: 0
@@ -8355,6 +8381,7 @@ GameObject:
   - component: {fileID: 949480814}
   - component: {fileID: 949480816}
   - component: {fileID: 949480815}
+  - component: {fileID: 949480817}
   m_Layer: 0
   m_Name: window_big_LOD0 (2)
   m_TagString: Untagged
@@ -8421,6 +8448,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 949480813}
   m_Mesh: {fileID: 4300000, guid: c93a7b6fab490314f9f3471aa2616c70, type: 3}
+--- !u!65 &949480817
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 949480813}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 1.5584333}
+  m_Center: {x: 0, y: 2, z: -0.7792165}
 --- !u!1001 &951175907
 Prefab:
   m_ObjectHideFlags: 0
