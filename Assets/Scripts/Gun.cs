@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Gun : MonoBehaviour {
-	Camera playerCam;
+    // arbitary change
+    Camera playerCam;
 	bool isLoaded;
     [SerializeField] AudioSource sndShoot;
     [SerializeField] AudioSource sndAbsorb;
+
     [SerializeField] GameObject particleFx;
+
     [SerializeField] Animator gunAnimCtrl;
 
 	void Awake() {
 		playerCam = GetComponent<Camera>();
+
         particleFx.SetActive(false);
 
     }
@@ -31,6 +35,7 @@ public class Gun : MonoBehaviour {
     private void LateUpdate()
     {
         //reset gun animation state
+
         gunAnimCtrl.SetInteger("state", 0);
     }
 
@@ -54,19 +59,27 @@ public class Gun : MonoBehaviour {
 		return null;
 	}
 
+
 	void Absorb()
 	{
 		isLoaded = true;
+
         sndAbsorb.Play();
+
         particleFx.SetActive(true);
+
         gunAnimCtrl.SetInteger("state", 1);
     }
 
 	void Shoot()
 	{
+
 		isLoaded = false;
+
         sndShoot.Play();
+
         particleFx.SetActive(false);
+
         gunAnimCtrl.SetInteger("state", 1);
 	}
 
