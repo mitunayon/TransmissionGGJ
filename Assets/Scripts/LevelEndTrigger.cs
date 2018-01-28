@@ -7,17 +7,21 @@ public class LevelEndTrigger : MonoBehaviour {
 
     [SerializeField] string nextLevel;
 	[SerializeField] GameObject particleGameObject;
+	[SerializeField] GameObject endCamera;
 	Animator particleAnim;
 
 	// Use this for initialization
 	void Start () {
-		if (particleGameObject == null)
+		if (particleGameObject != null)
 		{
-			print("error: please assign the particle gameObject in the inspector");
-			return;
+			particleAnim = particleGameObject.GetComponent<Animator>();
 		}
+		else print("error: please assign the particle gameObject in the inspector");
+
+		if (endCamera != null)
+			endCamera.SetActive(false);
 			
-		particleAnim = particleGameObject.GetComponent<Animator>();
+
 	}
 	
 	// Update is called once per frame
@@ -36,6 +40,7 @@ public class LevelEndTrigger : MonoBehaviour {
 	IEnumerator FinishState(float waitTime, GameObject player)
 	{
 		Destroy(player);
+		endCamera.SetActive(true);
 		particleAnim.SetBool("isLevelFinished", true);
 		yield return new WaitForSeconds(waitTime);
 		SceneManager.LoadScene(nextLevel);
