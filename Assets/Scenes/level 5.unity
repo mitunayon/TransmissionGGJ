@@ -6899,6 +6899,14 @@ Prefab:
       propertyPath: m_Name
       value: projector stars (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 19992378, guid: 496fa247adc61d44ebaeaf9d72671287, type: 2}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796, guid: 496fa247adc61d44ebaeaf9d72671287, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 496fa247adc61d44ebaeaf9d72671287, type: 2}
   m_IsPrefabParent: 0
@@ -7828,6 +7836,14 @@ Prefab:
     - target: {fileID: 167654, guid: 496fa247adc61d44ebaeaf9d72671287, type: 2}
       propertyPath: m_Name
       value: projector stars (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 19992378, guid: 496fa247adc61d44ebaeaf9d72671287, type: 2}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796, guid: 496fa247adc61d44ebaeaf9d72671287, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 496fa247adc61d44ebaeaf9d72671287, type: 2}
@@ -14848,6 +14864,14 @@ Prefab:
     - target: {fileID: 10886524, guid: 496fa247adc61d44ebaeaf9d72671287, type: 2}
       propertyPath: m_Color.b
       value: 0.08823532
+      objectReference: {fileID: 0}
+    - target: {fileID: 19992378, guid: 496fa247adc61d44ebaeaf9d72671287, type: 2}
+      propertyPath: m_SelectedEditorRenderState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114796, guid: 496fa247adc61d44ebaeaf9d72671287, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 496fa247adc61d44ebaeaf9d72671287, type: 2}
