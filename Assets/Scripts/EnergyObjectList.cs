@@ -14,7 +14,7 @@ public class EnergyObjectList : MonoBehaviour {
 		int childrenCount = transform.childCount;
 		energyGameObjects = new GameObject[childrenCount];
         audioSource = GetComponent<AudioSource>();
-        audioSource.enabled = isVisible;
+        UpdateSound();
     }
 
 	// Update is called once per frame
@@ -22,12 +22,26 @@ public class EnergyObjectList : MonoBehaviour {
 
 	}
 
+    void UpdateSound()
+    {
+        if (isVisible)
+        {
+            audioSource.Play();
+        }
+        else
+        {
+            audioSource.Stop();
+        }
+    }
+
 	public void SwitchState(bool _isVisible)
 	{
         
         _isVisible = !_isVisible;
 		isVisible = _isVisible;
-        audioSource.enabled = isVisible;
+        //audioSource.enabled = isVisible;
+        UpdateSound();
+        
 
         for (int i = 0; i < energyGameObjects.Length; i++)
 		{
