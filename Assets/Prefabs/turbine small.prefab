@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 4350707455373730}
   - component: {fileID: 33646329286948286}
   - component: {fileID: 23143546821588062}
+  - component: {fileID: 114988826060647730}
   m_Layer: 0
   m_Name: pCube21
   m_TagString: Untagged
@@ -93,15 +94,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1382914863634722}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.114, y: 0.08806815, z: 8.707442}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 1.377, y: -13.784, z: -7.605}
   m_LocalScale: {x: 0.36735207, y: 0.36735204, z: 0.36735204}
   m_Children:
   - {fileID: 4517137854637372}
   - {fileID: 4350707455373730}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!23 &23143546821588062
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -204,3 +205,16 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114988826060647730
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1817010463908194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e42335ba8fed1b24c931b38ad69080b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpd: 50
+  axis: {x: 0, y: 1, z: 0}
