@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class PlayerReset : MonoBehaviour {
 
@@ -29,7 +30,7 @@ public class PlayerReset : MonoBehaviour {
 
     public void ResetPosition()
     {
-        Debug.Log("Reset Position Called!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     
 }
