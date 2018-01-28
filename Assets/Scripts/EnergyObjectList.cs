@@ -6,14 +6,16 @@ public class EnergyObjectList : MonoBehaviour {
 
 	GameObject[] energyGameObjects;
 	public bool isVisible;
+    [SerializeField] AudioSource audioSource;
 
 
-
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		int childrenCount = transform.childCount;
 		energyGameObjects = new GameObject[childrenCount];
-	}
+        audioSource = GetComponent<AudioSource>();
+        audioSource.enabled = isVisible;
+    }
 
 	// Update is called once per frame
 	void Update () {
@@ -22,9 +24,12 @@ public class EnergyObjectList : MonoBehaviour {
 
 	public void SwitchState(bool _isVisible)
 	{
-		_isVisible = !_isVisible;
+        
+        _isVisible = !_isVisible;
 		isVisible = _isVisible;
-		for (int i = 0; i < energyGameObjects.Length; i++)
+        audioSource.enabled = isVisible;
+
+        for (int i = 0; i < energyGameObjects.Length; i++)
 		{
 			transform.GetChild(i).GetComponent<EnergyObject>().isVisible = isVisible;
 			//transform.GetChild(i).GetComponent<Renderer>().enabled = isVisible;
