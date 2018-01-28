@@ -8,6 +8,7 @@ public class Gun : MonoBehaviour {
     [SerializeField] AudioSource sndShoot;
     [SerializeField] AudioSource sndAbsorb;
     [SerializeField] GameObject particleFx;
+    [SerializeField] Animator gunAnimCtrl;
 
 	void Awake() {
 		playerCam = GetComponent<Camera>();
@@ -23,10 +24,17 @@ public class Gun : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		GunHandler();
-		//DrawLine(transform.position, transform.position + transform.forward * 10, Color.blue);
-	}
+        //DrawLine(transform.position, transform.position + transform.forward * 10, Color.blue);
+        
+    }
 
-	GameObject RaycastObject()
+    private void LateUpdate()
+    {
+        //reset gun animation state
+        gunAnimCtrl.SetInteger("state", 0);
+    }
+
+    GameObject RaycastObject()
 	{
 		RaycastHit hit;
 		float dist;
@@ -51,13 +59,15 @@ public class Gun : MonoBehaviour {
 		isLoaded = true;
         sndAbsorb.Play();
         particleFx.SetActive(true);
-	}
+        gunAnimCtrl.SetInteger("state", 1);
+    }
 
 	void Shoot()
 	{
 		isLoaded = false;
         sndShoot.Play();
         particleFx.SetActive(false);
+        gunAnimCtrl.SetInteger("state", 1);
 	}
 
 	void GunHandler()
