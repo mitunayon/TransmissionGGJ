@@ -532,6 +532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextLevel: level 3
   particleGameObject: {fileID: 1738289240066914}
+  endCamera: {fileID: 1349809270906796}
 --- !u!124 &124143899103406188
 Behaviour:
   m_ObjectHideFlags: 1
