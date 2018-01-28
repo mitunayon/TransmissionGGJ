@@ -7,11 +7,13 @@ public class Gun : MonoBehaviour {
 	bool isLoaded;
     [SerializeField] AudioSource sndShoot;
     [SerializeField] AudioSource sndAbsorb;
+    [SerializeField] GameObject particleFx;
 
 	void Awake() {
 		playerCam = GetComponent<Camera>();
-        
-	}
+        particleFx.SetActive(false);
+
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -48,12 +50,14 @@ public class Gun : MonoBehaviour {
 	{
 		isLoaded = true;
         sndAbsorb.Play();
+        particleFx.SetActive(true);
 	}
 
 	void Shoot()
 	{
 		isLoaded = false;
         sndShoot.Play();
+        particleFx.SetActive(false);
 	}
 
 	void GunHandler()
